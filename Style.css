@@ -1,0 +1,84 @@
+/* EXTERNAL CSS */
+
+body {
+  background-color: white;
+}
+
+/* h1 {
+  color: white;
+} */
+
+#p1 {
+  color: red;
+}
+
+#p2 {
+  color: orange;
+}
+
+#p3 {
+  color: yellow;
+}
+
+#p4 {
+  color: green;
+}
+
+/* FONT.html */
+@font-face {
+  src: url(Playwrite_DE_SAS/PlaywriteDESAS-VariableFont_wght.ttf);
+  font-family: Playwrite;
+}
+
+#hfont {
+  font-family: Arial, Impact;
+  color: gold;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 3em;
+  font-style: normal;
+}
+
+#pfont {
+  font-family: "Playwrite", cursive;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  color: whitesmoke;
+  font-size: 1em;
+  font-style: normal;
+}
+
+/* #hborders {
+  border-style: solid;
+  border-width: 3px;
+  border-color: hsl(273, 100%, 54%);
+  border-radius: 15px;
+} */
+
+#hborders {
+  border: 3px solid rgb(190, 38, 63);
+  border-radius: 20px;
+}
+
+#pborders {
+  border-bottom: 3px solid blue;
+  border-top: 3px groove rgb(81, 255, 0);
+  border-left: 3px dotted rgb(199, 51, 162);
+  border-right: 3px solid rgb(255, 0, 21);
+}
+
+#hshadow {
+  font-size: 46px;
+  text-shadow:
+    3px 3px 15px darkred,
+    -3px -3px 15px green;
+}
+
+#dshadow {
+  width: 250px;
+  height: 250px;
+  background-color: whitesmoke;
+  box-shadow:
+    5px 5px 5px black,
+    -5px -5px 5px gray;
+}

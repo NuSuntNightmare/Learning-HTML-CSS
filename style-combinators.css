@@ -1,0 +1,23 @@
+#container {
+  border: 2px solid;
+}
+
+/* DESCENDING COMBINATOR " "*/
+
+/* #container p {
+  background-color: rgb(224, 224, 116);
+} */
+
+/* CHILD 2:27:00 */
+
+/* #container > p {
+  background-color: red;
+} */
+
+/* #container ~ p {
+  background-color: rgb(114, 216, 100);
+} */
+
+#container + p {
+  background-color: rgb(80, 159, 190);
+}
