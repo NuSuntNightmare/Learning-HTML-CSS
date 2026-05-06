@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+a:link {
+  color: hsl(221, 100%, 74%);
+}
+a:hover {
+  color: hsl(221, 74%, 72%);
+  font-size: 1.1em;
+}
+a:active {
+  color: rgb(30, 255, 0);
+  font-size: 1.1em;
+}
+a:visited {
+  color: rgb(255, 0, 191);
+}
+
+ul:hover {
+  background-color: red;
+}
+
+li:hover {
+  background-color: rgb(241, 241, 75);
+  font-size: 1.2em;
+}
+
+li:not(:hover) {
+  background-color: whitesmoke;
+}
+
+#stickyUp {
+  position: sticky;
+  top: 0;
+  width: auto;
+  height: 10vh;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+#stickyDown {
+  position: sticky;
+  bottom: 0;
+  width: auto;
+  height: 10vh;
+
+  border-top-left-radius: 60vh;
+  border-top-right-radius: 60vh;
+
+  text-align: center;
+  background-color: rgb(25, 109, 158);
+}
+
+li:nth-child(3n) {
+  background-color: rgb(75, 241, 158);
+}
+
+#stickyDown p {
+  background-color: tomato;
+
+  padding: 10px;
+  display: none;
+}
+
+#stickyDown:hover p {
+  display: block;
+  text-transform: uppercase;
+}
+
+h1::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+
+p::first-line {
+  background-color: tomato;
+}
+
+p::selection {
+  color: green;
+  background-color: black;
+}
+
+#Fruits li::marker {
+  content: "🤦‍♂️ ";
+  color: pink;
+}
+
+#Sapple::after {
+  content: " 🍎";
+}
+
+#Sorange::after {
+  content: " 🍊";
+}
+
+#Sbanana::after {
+  content: "  🍌";
+}

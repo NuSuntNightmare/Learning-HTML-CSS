@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+
+  /* background-image: url(img/teen-woolf.jpg); */
+  /* background-image: url(img/tee-wolf-very-hd.webp); */
+  background-image: url(/HTML\ &\ CSS/img/teen-woolf-my-boy-n-girl.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+* {
+  color: red;
+  padding: 10px;
+}

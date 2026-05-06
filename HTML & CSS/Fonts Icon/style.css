@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+
+.icons {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.icons a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.fa-solid.fa-house.fa-2x {
+  color: gainsboro;
+}
+
+.fa-solid.fa-house.fa-2x:hover {
+  color: rgb(190, 190, 190);
+}
+
+.fa-brands.fa-facebook.fa-2x {
+  color: blue;
+}
+
+.fa-brands.fa-facebook.fa-2x:hover {
+  color: rgb(1, 1, 192);
+}
+
+.fa-brands.fa-instagram.fa-2x {
+  color: rgb(255, 122, 184);
+}
+
+.fa-brands.fa-instagram.fa-2x:hover {
+  color: rgb(255, 0, 128);
+}
+
+.fa-solid.fa-user-group.fa-2x {
+  color: gray;
+}
+
+.fa-solid.fa-user-group.fa-2x:hover {
+  color: rgb(68, 68, 68);
+}
+
+.fa-solid.fa-user.fa-2x {
+  color: black;
+}
+
+.fa-solid.fa-user.fa-2x:hover {
+  color: rgb(128, 128, 128);
+}
