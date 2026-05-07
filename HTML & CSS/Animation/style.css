@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(0, 0%, 20%);
+  color: whitesmoke;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  text-align: center;
+  margin: 10vh;
+  animation-iteration-count: infinite;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  text-align: center;
+  left: 50vh;
+  float: left;
+  margin: 5vh;
+}
+
+#box1 {
+  background-color: red;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+#box1:hover {
+  animation-duration: 5s;
+  animation-name: glow;
+  animation-direction: alternate;
+}
+
+#box2 {
+  background-color: blue;
+  animation-name: slideRight;
+  animation-duration: 5s;
+  /* animation-name: fade; */
+  animation-direction: alternate;
+  animation-play-state: running;
+  /* animation-timing-function: ease-in-out; */
+  /* animation-timing-function: steps(10); */
+  animation-timing-function: cubic-bezier(0.25, -2, 0.5, 2.5);
+}
+
+#box2:hover {
+  animation-name: glow;
+  animation-duration: 5s;
+}
+
+#box3 {
+  background-color: green;
+  animation-name: grow;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+/* -------------------------- */
+
+#circle1:hover {
+  background-color: red;
+  /* animation-name: slideLeft; */
+  animation-name: shrink;
+  animation-duration: 2s;
+}
+
+#circle2:hover {
+  background-color: blue;
+  /* animation-name: slideRight; */
+  animation: grow;
+  animation-duration: 2s;
+}
+
+#circle3:hover {
+  background-color: green;
+  /* animation-name: slideUp; */
+  animation-name: colorChange;
+  animation-duration: 15s;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(-300%);
+  }
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(2, 2);
+  }
+}
+
+@keyframes shrink {
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes fade {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: red;
+  }
+  60% {
+    background-color: purple;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@keyframes glow {
+  50% {
+    box-shadow: 0px 0px 20px 5px yellow;
+  }
+}
+
+#scuba {
+  width: 100px;
+  height: 100px;
+  animation-name: slideUp;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.25, -2, 0.5, 2.5);
+}
+
+#Larry {
+  position: sticky;
+  bottom: 0;
+  width: auto;
+  height: 300px;
+  animation-name: slideUp;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.25, -2, 0.5, 2.5);
+  margin-bottom: 10vh;
+}
